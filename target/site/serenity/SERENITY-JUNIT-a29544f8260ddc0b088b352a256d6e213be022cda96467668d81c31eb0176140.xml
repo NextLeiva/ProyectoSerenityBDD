@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Funcionalidad make appointment" skipped="0" tests="2" time="17.32" timestamp="2023-01-11 07:24:12"><testcase name="Validar que make appointment fue exitosa"><failure message="expected:&lt;No[]&gt; but was:&lt;No[d]&gt;" type="java.lang.AssertionError">expected:&lt;No[]&gt; but was:&lt;No[d]&gt;</failure><system-err>expected:&lt;No[]&gt; but was:&lt;No[d]&gt;&#13;
+ProyectoSerintyBDD@1.0-SNAPSHOT/pageobject.Appointment.validateDataAppointment(Appointment.java:36)&#13;
+ProyectoSerintyBDD@1.0-SNAPSHOT/stepsdefinitions.AppointmentStepsDefinitions.verificarDatosDeAppointmentDatosFacilityReadmissionProgramVisitDateYComment(AppointmentStepsDefinitions.java:37)&#13;
+✽.verificar datos de appointment datos Hongkong CURA Healthcare Center, Nod, Medicare, 13/01/2023 y cucumber(file:///C:/Users/MSI/Downloads/serenityBDD-master/ProyectoSerenityBDD/src/test/resources/features/loginkatalon.feature:12)&#13;
+</system-err></testcase></testsuite>
