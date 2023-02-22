@@ -32,52 +32,44 @@
     &lt;br&gt; &lt;a id="btn-make-appointment" href="./index.php#appointment" class="btn btn-dark btn-lg"&gt;Make Appointment&lt;/a&gt; <br/>
    &lt;/div&gt; <br/>
   &lt;/header&gt; <br/>
-  &lt;section id="summary" class="section bg-primary"&gt; <br/>
+  &lt;section id="appointment" class="section bg-primary"&gt; <br/>
    &lt;div class="container"&gt; <br/>
     &lt;div class="row"&gt; <br/>
-     &lt;div class="col-xs-12 text-center"&gt; <br/>
-      &lt;h2&gt;Appointment Confirmation&lt;/h2&gt; <br/>
-      &lt;p class="lead"&gt;Please be informed that your appointment has been booked as following:&lt;/p&gt; <br/>
+     &lt;div class="col-sm-12 text-center"&gt; <br/>
+      &lt;h2&gt;Make Appointment&lt;/h2&gt; <br/>
       &lt;hr class="small"&gt; <br/>
      &lt;/div&gt; <br/>
-     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
-      &lt;div class="col-xs-4"&gt; &lt;label for="facility"&gt;Facility&lt;/label&gt; <br/>
+     &lt;form class="form-horizontal" action="https://katalon-demo-cura.herokuapp.com/appointment.php#summary" method="post"&gt; <br/>
+      &lt;div class="form-group"&gt; &lt;label for="combo_facility" class="col-sm-offset-3 col-sm-2 control-label"&gt;Facility&lt;/label&gt; <br/>
+       &lt;div class="col-sm-4"&gt; &lt;select id="combo_facility" name="facility" class="form-control"&gt; &lt;option value="Tokyo CURA Healthcare Center"&gt;Tokyo CURA Healthcare Center&lt;/option&gt; &lt;option value="Hongkong CURA Healthcare Center"&gt;Hongkong CURA Healthcare Center&lt;/option&gt; &lt;option value="Seoul CURA Healthcare Center"&gt;Seoul CURA Healthcare Center&lt;/option&gt; &lt;/select&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-      &lt;div class="col-xs-8"&gt; <br/>
-       &lt;p id="facility"&gt;Seoul CURA Healthcare Center&lt;/p&gt; <br/>
+      &lt;div class="form-group"&gt; <br/>
+       &lt;div class="col-sm-offset-5 col-sm-4"&gt; &lt;label for="chk_hospotal_readmission" class="checkbox-inline"&gt; &lt;input type="checkbox" id="chk_hospotal_readmission" name="hospital_readmission" value="Yes"&gt; Apply for hospital readmission &lt;/label&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-     &lt;/div&gt; <br/>
-     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
-      &lt;div class="col-xs-4"&gt; &lt;label for="hospital_readmission"&gt;Apply for hospital readmission&lt;/label&gt; <br/>
+      &lt;div class="form-group"&gt; &lt;label class="col-sm-offset-3 col-sm-2 control-label"&gt;Healthcare Program&lt;/label&gt; <br/>
+       &lt;div class="col-sm-4"&gt; &lt;label class="radio-inline"&gt; &lt;input type="radio" name="programs" id="radio_program_medicare" value="Medicare" checked&gt; Medicare &lt;/label&gt; &lt;label class="radio-inline"&gt; &lt;input type="radio" name="programs" id="radio_program_medicaid" value="Medicaid"&gt; Medicaid &lt;/label&gt; &lt;label class="radio-inline"&gt; &lt;input type="radio" name="programs" id="radio_program_none" value="None"&gt; None &lt;/label&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-      &lt;div class="col-xs-8"&gt; <br/>
-       &lt;p id="hospital_readmission"&gt;No&lt;/p&gt; <br/>
+      &lt;div class="form-group"&gt; &lt;label for="txt_visit_date" class="col-sm-offset-3 col-sm-2 control-label"&gt;Visit Date (Required)&lt;/label&gt; <br/>
+       &lt;div class="col-sm-4"&gt; <br/>
+        &lt;div class="input-group date" data-provide="datepicker" data-date-format="dd/mm/yyyy"&gt; <br/>
+         &lt;input type="text" class="form-control" id="txt_visit_date" name="visit_date" placeholder="dd/mm/yyyy" autocomplete="off" required&gt; <br/>
+         &lt;div class="input-group-addon"&gt; &lt;span class="glyphicon glyphicon-calendar"&gt;&lt;/span&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-     &lt;/div&gt; <br/>
-     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
-      &lt;div class="col-xs-4"&gt; &lt;label for="program"&gt;Healthcare Program&lt;/label&gt; <br/>
+      &lt;div class="form-group"&gt; &lt;label for="txt_comment" class="col-sm-offset-3 col-sm-2 control-label"&gt;Comment&lt;/label&gt; <br/>
+       &lt;div class="col-sm-4"&gt; &lt;textarea class="form-control" id="txt_comment" name="comment" placeholder="Comment" rows="10"&gt;&lt;/textarea&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-      &lt;div class="col-xs-8"&gt; <br/>
-       &lt;p id="program"&gt;Medicare&lt;/p&gt; <br/>
+      &lt;div class="form-group"&gt; <br/>
+       &lt;div class="col-sm-offset-5 col-sm-4"&gt; &lt;button id="btn-book-appointment" type="submit" class="btn btn-default"&gt;Book Appointment&lt;/button&gt; <br/>
+       &lt;/div&gt; <br/>
       &lt;/div&gt; <br/>
-     &lt;/div&gt; <br/>
-     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
-      &lt;div class="col-xs-4"&gt; &lt;label for="visit_date"&gt;Visit Date&lt;/label&gt; <br/>
-      &lt;/div&gt; <br/>
-      &lt;div class="col-xs-8"&gt; <br/>
-       &lt;p id="visit_date"&gt;12/01/2023&lt;/p&gt; <br/>
-      &lt;/div&gt; <br/>
-     &lt;/div&gt; <br/>
-     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
-      &lt;div class="col-xs-4"&gt; &lt;label for="comment"&gt;Comment&lt;/label&gt; <br/>
-      &lt;/div&gt; <br/>
-      &lt;div class="col-xs-8"&gt; <br/>
-       &lt;p id="comment"&gt;selenium&lt;/p&gt; <br/>
-      &lt;/div&gt; <br/>
-     &lt;/div&gt; <br/>
-     &lt;div class="col-xs-12"&gt; <br/>
-      &lt;p class="text-center"&gt;&lt;a class="btn btn-default" href="https://katalon-demo-cura.herokuapp.com/"&gt;Go to Homepage&lt;/a&gt;&lt;/p&gt; <br/>
-     &lt;/div&gt; <br/>
+     &lt;/form&gt; <br/>
     &lt;/div&gt; <br/>
    &lt;/div&gt; <br/>
   &lt;/section&gt; &lt;!-- Footer --&gt; <br/>
@@ -101,7 +93,7 @@
       &lt;p class="text-muted"&gt;Copyright © CURA Healthcare Service 2023&lt;/p&gt; <br/>
      &lt;/div&gt; <br/>
     &lt;/div&gt; <br/>
-   &lt;/div&gt; &lt;a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: inline-block; overflow: hidden; height: 12.3522px; padding: 2.52271px 4.03633px; margin: 0px; width: 15.1272px; opacity: 0.252271;"&gt;&lt;i class="fa fa-chevron-up fa-fw fa-1x"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+   &lt;/div&gt; &lt;a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: inline-block; overflow: hidden; height: 37.9778px; padding: 8.21728px 13.1476px; margin: 0px; width: 47.0168px; opacity: 0.821728;"&gt;&lt;i class="fa fa-chevron-up fa-fw fa-1x"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
   &lt;/footer&gt; <br/>
   &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt; <br/>
   &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt; <br/>

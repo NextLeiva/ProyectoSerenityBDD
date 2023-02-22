@@ -20,56 +20,63 @@
    &lt;ul class="sidebar-nav"&gt; &lt;a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
     &lt;li class="sidebar-brand"&gt; &lt;a href="./" onclick="$('#menu-close').click();"&gt;CURA Healthcare&lt;/a&gt; &lt;/li&gt; <br/>
     &lt;li&gt; &lt;a href="./" onclick="$('#menu-close').click();"&gt;Home&lt;/a&gt; &lt;/li&gt; <br/>
-    &lt;li&gt; &lt;a href="profile.php#login" onclick="$('#menu-close').click();"&gt;Login&lt;/a&gt; &lt;/li&gt; <br/>
+    &lt;li&gt; &lt;a href="history.php#history" onclick="$('#menu-close').click();"&gt;History&lt;/a&gt; &lt;/li&gt; <br/>
+    &lt;li&gt; &lt;a href="profile.php#profile" onclick="$('#menu-close').click();"&gt;Profile&lt;/a&gt; &lt;/li&gt; <br/>
+    &lt;li&gt; &lt;a href="authenticate.php?logout" onclick="$('#menu-close').click();"&gt;Logout&lt;/a&gt; &lt;/li&gt; <br/>
    &lt;/ul&gt; <br/>
   &lt;/nav&gt; &lt;!-- Header --&gt; <br/>
   &lt;header id="top" class="header"&gt; <br/>
    &lt;div class="text-vertical-center"&gt; <br/>
     &lt;h1&gt;CURA Healthcare Service&lt;/h1&gt; <br/>
     &lt;h3&gt;We Care About Your Health&lt;/h3&gt; <br/>
-    &lt;br&gt; &lt;a id="btn-make-appointment" href="./profile.php#login" class="btn btn-dark btn-lg"&gt;Make Appointment&lt;/a&gt; <br/>
+    &lt;br&gt; &lt;a id="btn-make-appointment" href="./index.php#appointment" class="btn btn-dark btn-lg"&gt;Make Appointment&lt;/a&gt; <br/>
    &lt;/div&gt; <br/>
   &lt;/header&gt; <br/>
-  &lt;section id="login" class="section"&gt; <br/>
+  &lt;section id="summary" class="section bg-primary"&gt; <br/>
    &lt;div class="container"&gt; <br/>
     &lt;div class="row"&gt; <br/>
-     &lt;div class="col-sm-12 text-center"&gt; <br/>
-      &lt;h2&gt;Login&lt;/h2&gt; <br/>
-      &lt;p class="lead"&gt;Please login to make appointment.&lt;/p&gt; <br/>
+     &lt;div class="col-xs-12 text-center"&gt; <br/>
+      &lt;h2&gt;Appointment Confirmation&lt;/h2&gt; <br/>
+      &lt;p class="lead"&gt;Please be informed that your appointment has been booked as following:&lt;/p&gt; <br/>
+      &lt;hr class="small"&gt; <br/>
      &lt;/div&gt; <br/>
-     &lt;div class="col-sm-offset-3 col-sm-6"&gt; <br/>
-      &lt;form class="form-horizontal" action="https://katalon-demo-cura.herokuapp.com/authenticate.php" method="post"&gt; <br/>
-       &lt;div class="alert alert-info"&gt; <br/>
-        &lt;div class="form-group"&gt; &lt;label for="demo_account" class="col-sm-4 control-label"&gt;Demo account&lt;/label&gt; <br/>
-         &lt;div class="col-sm-8"&gt; <br/>
-          &lt;div class="input-group"&gt; &lt;span class="input-group-addon" id="demo_username_label"&gt;&lt;span class="glyphicon glyphicon-user" aria-hidden="true"&gt;&lt;/span&gt;&lt;/span&gt; <br/>
-           &lt;input type="text" class="form-control" placeholder="Username" aria-describedby="demo_username_label" value="John Doe" readonly&gt; <br/>
-          &lt;/div&gt; <br/>
-         &lt;/div&gt; <br/>
-        &lt;/div&gt; <br/>
-        &lt;div class="form-group" style="margin-bottom: 0;"&gt; <br/>
-         &lt;div class="col-sm-offset-4 col-sm-8"&gt; <br/>
-          &lt;div class="input-group"&gt; &lt;span class="input-group-addon" id="demo_password_label"&gt;&lt;span class="glyphicon glyphicon-lock" aria-hidden="true"&gt;&lt;/span&gt;&lt;/span&gt; <br/>
-           &lt;input type="text" class="form-control" placeholder="Password" aria-describedby="demo_password_label" value="ThisIsNotAPassword" readonly&gt; <br/>
-          &lt;/div&gt; <br/>
-         &lt;/div&gt; <br/>
-        &lt;/div&gt; <br/>
-       &lt;/div&gt; <br/>
-       &lt;div class="form-group"&gt; &lt;label for="txt-username" class="col-sm-4 control-label"&gt;Username&lt;/label&gt; <br/>
-        &lt;div class="col-sm-8"&gt; <br/>
-         &lt;input type="text" class="form-control" id="txt-username" name="username" placeholder="Username" value="" autocomplete="off"&gt; <br/>
-        &lt;/div&gt; <br/>
-       &lt;/div&gt; <br/>
-       &lt;div class="form-group"&gt; &lt;label for="txt-password" class="col-sm-4 control-label"&gt;Password&lt;/label&gt; <br/>
-        &lt;div class="col-sm-8"&gt; <br/>
-         &lt;input type="password" class="form-control" id="txt-password" name="password" placeholder="Password" value="" autocomplete="off"&gt; <br/>
-        &lt;/div&gt; <br/>
-       &lt;/div&gt; <br/>
-       &lt;div class="form-group"&gt; <br/>
-        &lt;div class="col-sm-offset-4 col-sm-8"&gt; &lt;button id="btn-login" type="submit" class="btn btn-default"&gt;Login&lt;/button&gt; <br/>
-        &lt;/div&gt; <br/>
-       &lt;/div&gt; <br/>
-      &lt;/form&gt; <br/>
+     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
+      &lt;div class="col-xs-4"&gt; &lt;label for="facility"&gt;Facility&lt;/label&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-xs-8"&gt; <br/>
+       &lt;p id="facility"&gt;Seoul CURA Healthcare Center&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
+      &lt;div class="col-xs-4"&gt; &lt;label for="hospital_readmission"&gt;Apply for hospital readmission&lt;/label&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-xs-8"&gt; <br/>
+       &lt;p id="hospital_readmission"&gt;No&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
+      &lt;div class="col-xs-4"&gt; &lt;label for="program"&gt;Healthcare Program&lt;/label&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-xs-8"&gt; <br/>
+       &lt;p id="program"&gt;Medicare&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
+      &lt;div class="col-xs-4"&gt; &lt;label for="visit_date"&gt;Visit Date&lt;/label&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-xs-8"&gt; <br/>
+       &lt;p id="visit_date"&gt;12/01/2023&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-xs-offset-2 col-xs-8"&gt; <br/>
+      &lt;div class="col-xs-4"&gt; &lt;label for="comment"&gt;Comment&lt;/label&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="col-xs-8"&gt; <br/>
+       &lt;p id="comment"&gt;selenium&lt;/p&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="col-xs-12"&gt; <br/>
+      &lt;p class="text-center"&gt;&lt;a class="btn btn-default" href="https://katalon-demo-cura.herokuapp.com/"&gt;Go to Homepage&lt;/a&gt;&lt;/p&gt; <br/>
      &lt;/div&gt; <br/>
     &lt;/div&gt; <br/>
    &lt;/div&gt; <br/>
@@ -94,7 +101,7 @@
       &lt;p class="text-muted"&gt;Copyright © CURA Healthcare Service 2023&lt;/p&gt; <br/>
      &lt;/div&gt; <br/>
     &lt;/div&gt; <br/>
-   &lt;/div&gt; &lt;a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: inline-block; overflow: hidden; height: 36.5818px; padding: 7.90707px 12.6513px; margin: 0px; width: 45.2796px; opacity: 0.790707;"&gt;&lt;i class="fa fa-chevron-up fa-fw fa-1x"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+   &lt;/div&gt; &lt;a id="to-top" href="#top" class="btn btn-dark btn-lg" style="display: inline-block; overflow: hidden; height: 12.9716px; padding: 2.66035px 4.25656px; margin: 0px; width: 15.898px; opacity: 0.266035;"&gt;&lt;i class="fa fa-chevron-up fa-fw fa-1x"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
   &lt;/footer&gt; <br/>
   &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt; <br/>
   &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt; <br/>

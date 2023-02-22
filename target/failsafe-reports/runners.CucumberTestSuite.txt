@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runners.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.426 s <<< FAILURE! - in runners.CucumberTestSuite
-Funcionalidad make appointment.Validar que make appointment fue exitosa #2  Time elapsed: 6.048 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.518 s <<< FAILURE! - in runners.CucumberTestSuite
+Funcionalidad make appointment.Validar que make appointment fue exitosa #2  Time elapsed: 5.322 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<No[]> but was:<No[d]>
 
